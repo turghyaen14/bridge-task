@@ -1,0 +1,10 @@
+.splashImageWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .splashImage {
+    width: 30%;
+    height: auto;
+  }
+}
