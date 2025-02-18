@@ -8,7 +8,7 @@ const HighScores = () => {
   useEffect(() => {
     const fetchScores = async () => {
       try {
-        const response = await fetch("http://localhost:5000/scores");
+        const response = await fetch("https://round-off-b0187b7d8704.herokuapp.com/scores");
         response.json().then((data) => {
           const sortedData = data.sort((a, b) => b.score - a.score);
           setHighScores(sortedData);

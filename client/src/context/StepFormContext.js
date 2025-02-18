@@ -24,7 +24,7 @@ export const StepFormContextProvider = ({ children }) => {
     };
 
     try {
-      const response = await fetch("http://localhost:5000/scores", {
+      const response = await fetch("https://round-off-b0187b7d8704.herokuapp.com/scores", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(scoreData),
