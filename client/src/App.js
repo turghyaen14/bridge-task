@@ -9,8 +9,6 @@ import QuestionWrapper from "./components/QuestionItems/QuestionWrapper";
 import HighScores from "./components/HighScores/HighScores";
 
 function App() {
-  const [scores, setScores] = useState([]);
-
   const { currentStep, staticQuestions, name, scoreSubmitted } =
     useContext(StepFormContext);
 
